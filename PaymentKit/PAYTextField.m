@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKTextField.h"
+#import "PAYTextField.h"
 
 #define kPTKTextFieldSpaceChar @"\u200B"
 
-@implementation PTKTextField
+@implementation PAYTextField
 
 @dynamic delegate;
 

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKCard.h"
+#import "PAYCard.h"
 
-@implementation PTKCard
+@implementation PAYCard
 
 - (NSString *)last4
 {

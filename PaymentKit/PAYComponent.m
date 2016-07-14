@@ -6,9 +6,9 @@
 //
 //
 
-#import "PTKComponent.h"
+#import "PAYComponent.h"
 
-@implementation PTKComponent
+@implementation PAYComponent
 
 - (id)initWithString:(NSString *)string
 {

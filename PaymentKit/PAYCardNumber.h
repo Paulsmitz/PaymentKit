@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTKCardType.h"
-#import "PTKComponent.h"
+#import "PAYCardType.h"
+#import "PAYComponent.h"
 
-@interface PTKCardNumber : PTKComponent
+@interface PAYCardNumber : PAYComponent
 
-@property (nonatomic, readonly) PTKCardType cardType;
+@property (nonatomic, readonly) PAYCardType cardType;
 @property (nonatomic, readonly) NSString *last4;
 @property (nonatomic, readonly) NSString *lastGroup;
 @property (nonatomic, readonly) NSString *string;

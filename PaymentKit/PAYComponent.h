@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 // Abstract class; represents a component of a credit card.
-@interface PTKComponent : NSObject
+@interface PAYComponent : NSObject
 
 - (id)initWithString:(NSString *)string;
 - (NSString *)string;

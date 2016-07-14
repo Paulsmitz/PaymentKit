@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTKComponent.h"
+#import "PAYComponent.h"
 
-@interface PTKCardExpiry : PTKComponent
+@interface PAYCardExpiry : PAYComponent
 
 @property (nonatomic, readonly) NSUInteger month;
 @property (nonatomic, readonly) NSUInteger year;

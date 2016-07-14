@@ -7,41 +7,41 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PTKCard.h"
-#import "PTKCardNumber.h"
-#import "PTKCardExpiry.h"
-#import "PTKCardCVC.h"
-#import "PTKAddressZip.h"
-#import "PTKUSAddressZip.h"
+#import "PAYCard.h"
+#import "PAYCardNumber.h"
+#import "PAYCardExpiry.h"
+#import "PAYCardCVC.h"
+#import "PAYAddressZip.h"
+#import "PAYUSAddressZip.h"
 
-@class PTKView, PTKTextField;
+@class PAYView, PAYTextField;
 
 __attribute__((deprecated("We've moved development of PaymentKit into github.com/stripe/stripe-ios. You should migrate to use that instead. For help, see https://github.com/stripe/paymentkit#migration .")))
 @protocol PTKViewDelegate <NSObject>
 
 @optional
-- (void)paymentView:(PTKView *)paymentView withCard:(PTKCard *)card isValid:(BOOL)valid;
+- (void)paymentView:(PAYView *)paymentView withCard:(PAYCard *)card isValid:(BOOL)valid;
 
 @end
 
 __attribute__((deprecated("We've moved development of PaymentKit into github.com/stripe/stripe-ios. You should migrate to use that instead. For help, see https://github.com/stripe/paymentkit#migration .")))
-@interface PTKView : UIView
+@interface PAYView : UIView
 
 - (BOOL)isValid;
 
 @property (nonatomic, readonly) UIView *opaqueOverGradientView;
-@property (nonatomic, readonly) PTKCardNumber *cardNumber;
-@property (nonatomic, readonly) PTKCardExpiry *cardExpiry;
-@property (nonatomic, readonly) PTKCardCVC *cardCVC;
-@property (nonatomic, readonly) PTKAddressZip *addressZip;
+@property (nonatomic, readonly) PAYCardNumber *cardNumber;
+@property (nonatomic, readonly) PAYCardExpiry *cardExpiry;
+@property (nonatomic, readonly) PAYCardCVC *cardCVC;
+@property (nonatomic, readonly) PAYAddressZip *addressZip;
 
 @property IBOutlet UIView *innerView;
 @property IBOutlet UIView *clipView;
-@property IBOutlet PTKTextField *cardNumberField;
-@property IBOutlet PTKTextField *cardExpiryField;
-@property IBOutlet PTKTextField *cardCVCField;
+@property IBOutlet PAYTextField *cardNumberField;
+@property IBOutlet PAYTextField *cardExpiryField;
+@property IBOutlet PAYTextField *cardCVCField;
 @property IBOutlet UIImageView *placeholderView;
 @property (nonatomic, weak) id <PTKViewDelegate> delegate;
-@property (readonly) PTKCard *card;
+@property (readonly) PAYCard *card;
 
 @end

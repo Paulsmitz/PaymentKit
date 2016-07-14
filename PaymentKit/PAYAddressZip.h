@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTKComponent.h"
+#import "PAYComponent.h"
 
-@interface PTKAddressZip : PTKComponent {
+@interface PAYAddressZip : PAYComponent {
 @protected
     NSString *_zip;
 }

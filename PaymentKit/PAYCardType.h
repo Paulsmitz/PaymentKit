@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#ifndef PTKCardType_h
-#define PTKCardType_h
+#ifndef PAYCardType_h
+#define PAYCardType_h
 
-typedef NS_ENUM(NSInteger, PTKCardType) {
+typedef NS_ENUM(NSInteger, PAYCardType) {
     PTKCardTypeVisa,
     PTKCardTypeMasterCard,
     PTKCardTypeAmex,

@@ -7,7 +7,7 @@
 //
 
 #import "PTKCardCVCTest.h"
-#import "PTKCardCVC.h"
+#import "PAYCardCVC.h"
 #define CCVC(string) [PTKCardCVC cardCVCWithString:string]
 
 @implementation PTKCardCVCTest

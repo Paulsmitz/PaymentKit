@@ -7,7 +7,7 @@
 //
 
 #import "PTKCardNumberTest.h"
-#import "PTKCardNumber.h"
+#import "PAYCardNumber.h"
 #define CNUMBER(string) [PTKCardNumber cardNumberWithString:string]
 
 @implementation PTKCardNumberTest

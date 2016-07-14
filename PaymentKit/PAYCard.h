@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PTKCard : NSObject
+@interface PAYCard : NSObject
 
 @property (nonatomic, copy) NSString *number;
 @property (nonatomic, copy) NSString *cvc;

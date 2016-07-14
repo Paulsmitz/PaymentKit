@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKCardExpiry.h"
+#import "PAYCardExpiry.h"
 
-@implementation PTKCardExpiry {
+@implementation PAYCardExpiry {
 @private
     NSString *_month;
     NSString *_year;

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKCardCVC.h"
+#import "PAYCardCVC.h"
 
-@implementation PTKCardCVC {
+@implementation PAYCardCVC {
 @private
     NSString *_cvc;
 }
@@ -44,7 +44,7 @@
     return _cvc.length >= 3 && _cvc.length <= 4;
 }
 
-- (BOOL)isValidWithType:(PTKCardType)type
+- (BOOL)isValidWithType:(PAYCardType)type
 {
     if (type == PTKCardTypeAmex) {
         return _cvc.length == 4;
@@ -58,7 +58,7 @@
     return _cvc.length <= 4;
 }
 
-- (BOOL)isPartiallyValidWithType:(PTKCardType)type
+- (BOOL)isPartiallyValidWithType:(PAYCardType)type
 {
     if (type == PTKCardTypeAmex) {
         return _cvc.length <= 4;

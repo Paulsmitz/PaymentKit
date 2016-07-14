@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class PTKTextField;
+@class PAYTextField;
 
 @protocol PTKTextFieldDelegate <UITextFieldDelegate>
 
 @optional
 
-- (void)pkTextFieldDidBackSpaceWhileTextIsEmpty:(PTKTextField *)textField;
+- (void)pkTextFieldDidBackSpaceWhileTextIsEmpty:(PAYTextField *)textField;
 
 @end
 
-@interface PTKTextField : UITextField
+@interface PAYTextField : UITextField
 
 + (NSString*)textByRemovingUselessSpacesFromString:(NSString*)string;
 

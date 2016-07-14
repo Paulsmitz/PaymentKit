@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKCardNumber.h"
+#import "PAYCardNumber.h"
 
-@implementation PTKCardNumber {
+@implementation PAYCardNumber {
 @private
     NSString *_number;
 }
@@ -30,7 +30,7 @@
     return self;
 }
 
-- (PTKCardType)cardType
+- (PAYCardType)cardType
 {
     if (_number.length < 2) {
         return PTKCardTypeUnknown;
@@ -196,7 +196,7 @@
 
 - (NSInteger)lengthForCardType
 {
-    PTKCardType type = self.cardType;
+    PAYCardType type = self.cardType;
     NSInteger length;
     if (type == PTKCardTypeAmex) {
         length = 15;

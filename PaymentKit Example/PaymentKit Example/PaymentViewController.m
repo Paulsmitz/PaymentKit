@@ -10,7 +10,7 @@
 
 @interface PaymentViewController()
 
-@property IBOutlet PTKView* paymentView;
+@property IBOutlet PAYView* paymentView;
 
 @end
 
@@ -33,7 +33,7 @@
     saveButton.enabled = NO;
     self.navigationItem.rightBarButtonItem = saveButton;
     
-    self.paymentView = [[PTKView alloc] initWithFrame:CGRectMake(15, 25, 290, 45)];
+    self.paymentView = [[PAYView alloc] initWithFrame:CGRectMake(15, 25, 290, 45)];
     self.paymentView.delegate = self;
     
     [self.view addSubview:self.paymentView];
@@ -41,7 +41,7 @@
 }
 
 
-- (void) paymentView:(PTKView *)paymentView withCard:(PTKCard *)card isValid:(BOOL)valid
+- (void) paymentView:(PAYView *)paymentView withCard:(PAYCard *)card isValid:(BOOL)valid
 {
     self.navigationItem.rightBarButtonItem.enabled = valid;
 }
@@ -54,7 +54,7 @@
 
 - (IBAction)save:(id)sender
 {
-    PTKCard* card = self.paymentView.card;
+    PAYCard* card = self.paymentView.card;
     
     NSLog(@"Card last4: %@", card.last4);
     NSLog(@"Card expiry: %lu/%lu", (unsigned long)card.expMonth, (unsigned long)card.expYear);

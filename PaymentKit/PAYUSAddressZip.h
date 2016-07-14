@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTKAddressZip.h"
+#import "PAYAddressZip.h"
 
-@interface PTKUSAddressZip : PTKAddressZip
+@interface PAYUSAddressZip : PAYAddressZip
 @end

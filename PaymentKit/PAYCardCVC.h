@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PTKCardType.h"
-#import "PTKComponent.h"
+#import "PAYCardType.h"
+#import "PAYComponent.h"
 
-@interface PTKCardCVC : PTKComponent
+@interface PAYCardCVC : PAYComponent
 
 @property (nonatomic, readonly) NSString *string;
 
 + (instancetype)cardCVCWithString:(NSString *)string;
-- (BOOL)isValidWithType:(PTKCardType)type;
-- (BOOL)isPartiallyValidWithType:(PTKCardType)type;
+- (BOOL)isValidWithType:(PAYCardType)type;
+- (BOOL)isPartiallyValidWithType:(PAYCardType)type;
 
 @end
