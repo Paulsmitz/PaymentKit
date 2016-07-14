@@ -1,5 +1,5 @@
 //
-//  PTKTextField.h
+//  PAYTextField.h
 //  PaymentKit Example
 //
 //  Created by Michaël Villar on 3/20/13.
@@ -10,7 +10,7 @@
 
 @class PAYTextField;
 
-@protocol PTKTextFieldDelegate <UITextFieldDelegate>
+@protocol PAYTextFieldDelegate <UITextFieldDelegate>
 
 @optional
 
@@ -22,7 +22,7 @@
 
 + (NSString*)textByRemovingUselessSpacesFromString:(NSString*)string;
 
-@property (nonatomic, weak) id<PTKTextFieldDelegate> delegate;
+@property (nonatomic, weak) id<PAYTextFieldDelegate> delegate;
 
 @end
 

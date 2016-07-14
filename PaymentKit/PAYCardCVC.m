@@ -1,6 +1,6 @@
 //
-//  PTKCardCVC.m
-//  PTKPayment Example
+//  PAYCardCVC.m
+//  PAYPayment Example
 //
 //  Created by Alex MacCaw on 1/22/13.
 //  Copyright (c) 2013 Stripe. All rights reserved.
@@ -46,7 +46,7 @@
 
 - (BOOL)isValidWithType:(PAYCardType)type
 {
-    if (type == PTKCardTypeAmex) {
+    if (type == PAYCardTypeAmex) {
         return _cvc.length == 4;
     } else {
         return _cvc.length == 3;
@@ -60,7 +60,7 @@
 
 - (BOOL)isPartiallyValidWithType:(PAYCardType)type
 {
-    if (type == PTKCardTypeAmex) {
+    if (type == PAYCardTypeAmex) {
         return _cvc.length <= 4;
     } else {
         return _cvc.length <= 3;

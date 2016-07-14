@@ -1,6 +1,6 @@
 //
-//  PTKCard.m
-//  PTKPayment Example
+//  PAYCard.m
+//  PAYPayment Example
 //
 //  Created by Alex MacCaw on 1/31/13.
 //  Copyright (c) 2013 Stripe. All rights reserved.

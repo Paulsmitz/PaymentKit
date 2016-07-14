@@ -1,5 +1,5 @@
 //
-//  PTKUSAddressZip.h
+//  PAYUSAddressZip.h
 //  PaymentKit Example
 //
 //  Created by Alex MacCaw on 2/17/13.

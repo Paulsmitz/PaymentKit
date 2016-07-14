@@ -1,5 +1,5 @@
 //
-//  PTKTextField.m
+//  PAYTextField.m
 //  PaymentKit Example
 //
 //  Created by Michaël Villar on 3/20/13.
@@ -8,7 +8,7 @@
 
 #import "PAYTextField.h"
 
-#define kPTKTextFieldSpaceChar @"\u200B"
+#define kPAYTextFieldSpaceChar @"\u200B"
 
 @implementation PAYTextField
 
@@ -16,14 +16,14 @@
 
 + (NSString *)textByRemovingUselessSpacesFromString:(NSString *)string
 {
-    return [string stringByReplacingOccurrencesOfString:kPTKTextFieldSpaceChar withString:@""];
+    return [string stringByReplacingOccurrencesOfString:kPAYTextFieldSpaceChar withString:@""];
 }
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.text = kPTKTextFieldSpaceChar;
+        self.text = kPAYTextFieldSpaceChar;
         [self addObserver:self forKeyPath:@"text" options:0 context:NULL];
     }
     return self;
@@ -41,7 +41,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    if (self.text.length == 0 || [self.text isEqualToString:kPTKTextFieldSpaceChar]) {
+    if (self.text.length == 0 || [self.text isEqualToString:kPAYTextFieldSpaceChar]) {
         CGRect placeholderRect = self.bounds;
         placeholderRect.origin.y += 0.5;
         [super drawPlaceholderInRect:placeholderRect];
@@ -58,7 +58,7 @@
             if ([self.delegate respondsToSelector:@selector(pkTextFieldDidBackSpaceWhileTextIsEmpty:)])
                 [self.delegate performSelector:@selector(pkTextFieldDidBackSpaceWhileTextIsEmpty:)
                                     withObject:self];
-            self.text = kPTKTextFieldSpaceChar;
+            self.text = kPAYTextFieldSpaceChar;
         }
         [self setNeedsDisplay];
     }

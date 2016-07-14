@@ -1,16 +1,16 @@
 //
-//  PTKCardCVCTest.m
-//  PTKPayment Example
+//  PAYCardCVCTest.m
+//  PAYPayment Example
 //
 //  Created by Alex MacCaw on 2/6/13.
 //  Copyright (c) 2013 Stripe. All rights reserved.
 //
 
-#import "PTKCardCVCTest.h"
+#import "PAYCardCVCTest.h"
 #import "PAYCardCVC.h"
-#define CCVC(string) [PTKCardCVC cardCVCWithString:string]
+#define CCVC(string) [PAYCardCVC cardCVCWithString:string]
 
-@implementation PTKCardCVCTest
+@implementation PAYCardCVCTest
 
 - (void) testStripsNonIntegers
 {
@@ -36,11 +36,11 @@
 
 - (void) testIsPartiallyValidWithType
 {
-    XCTAssertTrue([CCVC(@"123") isPartiallyValidWithType:PTKCardTypeVisa], @"Test is valid");
-    XCTAssertTrue(![CCVC(@"1234") isPartiallyValidWithType:PTKCardTypeVisa], @"Test is valid");
+    XCTAssertTrue([CCVC(@"123") isPartiallyValidWithType:PAYCardTypeVisa], @"Test is valid");
+    XCTAssertTrue(![CCVC(@"1234") isPartiallyValidWithType:PAYCardTypeVisa], @"Test is valid");
 
-    XCTAssertTrue([CCVC(@"123") isPartiallyValidWithType:PTKCardTypeAmex], @"Test is valid");
-    XCTAssertTrue([CCVC(@"1234") isPartiallyValidWithType:PTKCardTypeAmex], @"Test is valid");
+    XCTAssertTrue([CCVC(@"123") isPartiallyValidWithType:PAYCardTypeAmex], @"Test is valid");
+    XCTAssertTrue([CCVC(@"1234") isPartiallyValidWithType:PAYCardTypeAmex], @"Test is valid");
 }
 
 @end

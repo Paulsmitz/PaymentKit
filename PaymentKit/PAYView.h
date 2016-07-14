@@ -1,6 +1,6 @@
 //
-//  PTKPaymentField.h
-//  PTKPayment Example
+//  PAYPaymentField.h
+//  PAYPayment Example
 //
 //  Created by Alex MacCaw on 1/22/13.
 //  Copyright (c) 2013 Stripe. All rights reserved.
@@ -16,15 +16,13 @@
 
 @class PAYView, PAYTextField;
 
-__attribute__((deprecated("We've moved development of PaymentKit into github.com/stripe/stripe-ios. You should migrate to use that instead. For help, see https://github.com/stripe/paymentkit#migration .")))
-@protocol PTKViewDelegate <NSObject>
+@protocol PAYViewDelegate <NSObject>
 
 @optional
 - (void)paymentView:(PAYView *)paymentView withCard:(PAYCard *)card isValid:(BOOL)valid;
 
 @end
 
-__attribute__((deprecated("We've moved development of PaymentKit into github.com/stripe/stripe-ios. You should migrate to use that instead. For help, see https://github.com/stripe/paymentkit#migration .")))
 @interface PAYView : UIView
 
 - (BOOL)isValid;
@@ -41,7 +39,7 @@ __attribute__((deprecated("We've moved development of PaymentKit into github.com
 @property IBOutlet PAYTextField *cardExpiryField;
 @property IBOutlet PAYTextField *cardCVCField;
 @property IBOutlet UIImageView *placeholderView;
-@property (nonatomic, weak) id <PTKViewDelegate> delegate;
+@property (nonatomic, weak) id <PAYViewDelegate> delegate;
 @property (readonly) PAYCard *card;
 
 @end

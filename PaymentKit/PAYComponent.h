@@ -1,5 +1,5 @@
 //
-//  PTKComponent.h
+//  PAYComponent.h
 //  Stripe
 //
 //  Created by Phil Cohen on 12/18/13.
